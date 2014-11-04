@@ -67,7 +67,7 @@ public class ScaleformLayer : TouchLayer
 
     protected override void updateTouch(ITouch touch)
     {
-        movie.MoveTouch(touch.Id, touch.Position.x, touch.Position.y);
+		movie.UpdateTouch(touch.Id, touch.Position.x, touch.Position.y);
     }
 
     protected override void endTouch(ITouch touch)
